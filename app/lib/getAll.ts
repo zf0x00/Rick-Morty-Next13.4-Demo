@@ -3,6 +3,6 @@ export default async function getAllApi() {
 
     const res = await fetch('https://rickandmortyapi.com/api') 
 
-    if(!res.ok) throw new Error("fetch get All Failed")
+    if(!res.ok) return undefined
   return res.json()
 }
